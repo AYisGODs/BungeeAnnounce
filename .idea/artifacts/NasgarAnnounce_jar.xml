@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="NasgarAnnounce:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="NasgarAnnounce.jar">
+      <element id="module-output" name="NasgarAnnounce" />
+    </root>
+  </artifact>
+</component>

@@ -1,6 +1,6 @@
-name: SimpleAnnounce
+name: NasgarAnnounce
 version: '1.0'
-main: me.refrac.simpleannounce.bungee.BungeeAnnounce
-author: Refrac
-description: A Simple Plugin To Keep Your Players Updated
-website: https://discord.gg/jVnmm7QnQU
+main: me.mateo.announce.bungee.BungeeAnnounce
+author: AYisGOD
+description: Plugin Simple de Anuncios
+website: Nasgar.online
