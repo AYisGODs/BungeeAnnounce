@@ -15,10 +15,10 @@ public class AnnounceTask implements Runnable {
 
     @Override
     public void run() {
-        Set<String> broadcastList = (Set<String>) BungeeAnnounce.getConfig().getSection("Announcements").getKeys();
+        Set<String> broadcastList = (Set<String>) BungeeAnnounce.getConfig().getSection("Anuncios").getKeys();
         String broadcastId = getRandom(broadcastList);
-        Configuration broadcast = BungeeAnnounce.getConfig().getSection("Announcements." + broadcastId);
-        for (String message : broadcast.getStringList("LINES")) {
+        Configuration broadcast = BungeeAnnounce.getConfig().getSection("Anuncios." + broadcastId);
+        for (String message : broadcast.getStringList("LINEAS")) {
             ProxyServer.getInstance().getPlayers().forEach((player -> player.sendMessage(Utils.formatComponent(message.replace("{arrow}", "»")))));
         }
     }

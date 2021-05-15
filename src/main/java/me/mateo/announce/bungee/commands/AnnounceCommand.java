@@ -14,7 +14,7 @@ import net.md_5.bungee.api.plugin.Command;
 public class AnnounceCommand extends Command {
 
     public AnnounceCommand() {
-        super("announce", "bungeeannounce.use",  "bcast", "broadcast");
+        super("announce", "nasgarannounce.use",  "bcast", "broadcast", "anunciar");
     }
 
     @Override
@@ -23,15 +23,14 @@ public class AnnounceCommand extends Command {
             ProxiedPlayer player = (ProxiedPlayer) sender;
 
             if (args.length == 0) {
-                player.sendMessage(Utils.formatComponent("&b&lBungeeAnnounce &7by Refrac"));
+                player.sendMessage(Utils.formatComponent("&b&lNasgarAnuncios"));
                 player.sendMessage(new TextComponent(""));
-                player.sendMessage(Utils.formatComponent("&b/announce <message> &7- Announce your messages"));
-                player.sendMessage(Utils.formatComponent("&b/announce reload &7- Reload your config files"));
+                player.sendMessage(Utils.formatComponent("&b/announce <message> &7- Envia un anuncio"));
             } else if (args.length >= 1) {
-                if (BungeeAnnounce.getConfig().getBoolean("Format.ENABLED")) {
+                if (BungeeAnnounce.getConfig().getBoolean("Formato.ACTIVADO")) {
                     String message = Joiner.on(" ").join(args);
 
-                    for (String format : BungeeAnnounce.getConfig().getStringList("Format.LINES")) {
+                    for (String format : BungeeAnnounce.getConfig().getStringList("Formato.LINEAS")) {
                         ProxyServer.getInstance().getPlayers().forEach(p -> p.sendMessage(Utils.formatComponent(format.replace("{arrow}", "»").replace("{message}", message))));
                     }
                 } else {

@@ -2,18 +2,19 @@ Prefix: "&b&lNASGAR >> &7"
 Interval: 3600 # EN SEGUNGOS (3600 SEGUNDOS = 1 HORA)
 # Este formato es si desea anunciar manualmente con /announce <message>
 # Si esto está deshabilitado, el comando tendrá el prefijo en su lugar
-Format:
-  ENABLED: true
-  LINES:
+# Permiso para usar este comando es - nasgarannounce.use
+Formato:
+  ACTIVADO: true
+  LINEAS:
     - "&8&m-------------------------------------------------"
     - "&8{arrow} &b&lNasgar"
     - ""
     - "&8{arrow} &7{message}"
     - ""
     - "&8&m-------------------------------------------------"
-Announcements:
-  TEST:
-    LINES:
+Anuncios:
+  EJEMPLO:
+    LINEAS:
       - "&8&m-------------------------------------------------"
       - "&8{arrow} &b&lNASGAR &8| &f&lEJEMPLO!"
       - ""
