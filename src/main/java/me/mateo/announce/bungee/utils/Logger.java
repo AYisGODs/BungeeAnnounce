@@ -1,14 +1,9 @@
-/*
- * Copyright (c) Refrac
- * If you have any questions please email refracplaysmc@gmail.com or reach me on Discord
- */
+
 package me.mateo.announce.bungee.utils;
 
 import net.md_5.bungee.api.ProxyServer;
 
-/**
- * @author Zachary Baldwin / Refrac
- */
+
 public enum Logger {
 
     NONE('r'), SUCCESS('a'), ERROR('c'), WARNING('e'), INFO('b');

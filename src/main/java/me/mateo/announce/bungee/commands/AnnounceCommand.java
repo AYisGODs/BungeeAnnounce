@@ -1,7 +1,4 @@
-/*
- * Copyright (c) Refrac
- * If you have any questions please email refracplaysmc@gmail.com or reach me on Discord
- */
+
 package me.mateo.announce.bungee.commands;
 
 import com.google.common.base.Joiner;
@@ -13,9 +10,7 @@ import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
 
-/**
- * @author Zachary Baldwin / Refrac
- */
+
 public class AnnounceCommand extends Command {
 
     public AnnounceCommand() {

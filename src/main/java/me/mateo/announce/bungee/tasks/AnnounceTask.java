@@ -1,7 +1,4 @@
-/*
- * Copyright (c) Refrac
- * If you have any questions please email refracplaysmc@gmail.com or reach me on Discord
- */
+
 package me.mateo.announce.bungee.tasks;
 
 import me.mateo.announce.bungee.BungeeAnnounce;
@@ -13,9 +10,7 @@ import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 
-/**
- * @author Zachary Baldwin / Refrac
- */
+
 public class AnnounceTask implements Runnable {
 
     @Override

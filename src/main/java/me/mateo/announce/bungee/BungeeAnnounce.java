@@ -1,7 +1,3 @@
-/*
- * Copyright (c) Refrac
- * If you have any questions please email refracplaysmc@gmail.com or reach me on Discord
- */
 package me.mateo.announce.bungee;
 
 import com.google.common.io.ByteStreams;
@@ -37,6 +33,7 @@ public final class BungeeAnnounce extends Plugin {
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new AnnounceReloadCommand());
 
         ProxyServer.getInstance().getScheduler().schedule(this, new AnnounceTask(), 0, getConfig().getInt("Interval"), TimeUnit.SECONDS);
+        sendBanner();
     }
 
     @Override
@@ -46,7 +43,6 @@ public final class BungeeAnnounce extends Plugin {
 
         ProxyServer.getInstance().getScheduler().cancel(this);
         ProxyServer.getInstance().getPluginManager().unregisterCommands(this);
-        sendBanner();
     }
 
     public static BungeeAnnounce getInstance() {

@@ -1,15 +1,10 @@
-/*
- * Copyright (c) Refrac
- * If you have any questions please email refracplaysmc@gmail.com or reach me on Discord
- */
+
 package me.mateo.announce.bungee.utils;
 
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.TextComponent;
 
-/**
- * @author Zachary Baldwin / Refrac
- */
+
 public class Utils {
 
     public static String format(String message) {
