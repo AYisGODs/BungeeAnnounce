@@ -1,2 +1,2 @@
-# NasgarAnnounce
-Nasgar BungeeCord Announcement
+# MythMc
+BungeeCord Announcement
