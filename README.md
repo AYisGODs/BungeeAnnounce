@@ -1,2 +1,2 @@
-# MythMc
+# Simple Plugim BungeeCord
 BungeeCord Announcement
