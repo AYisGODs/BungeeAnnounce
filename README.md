@@ -1,2 +1,2 @@
-# Simple Plugim BungeeCord
+# Simple Plugin BungeeCord
 BungeeCord Announcement
